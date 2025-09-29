@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Landing — Sobre mim, Formação, Portfólio, Contato</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="#sobre" id="link-sobre">Sobre mim</a>
+				<a href="#formacao" id="link-formacao">Formação</a>
+				<a href="#portfolio" id="link-portfolio">Portfólio</a>
+				<a href="#contato" id="link-contato">Contato</a>
+			</nav>
+
+			<div class="div-button">
+				<button class="mode"></button>
+				<span class="button-text"></span>
+			</div>
+		</header>
+
+		<section id="sobre">
+			<div>
+				<h2 id="sobre-title">Sobre mim</h2>
+				<p>Meu nome é Valéria, e atuo há 3 anos com desenvolvimento de softwares web. Atualmente estou no segundo ano do curso de Engenharia de Software na Uninter.</p>
+				<p>No meu tempo livre, gosto de ler sobre astronomia.</p>
+			</div>
+		</section>
+
+		<section id="formacao">
+			<div class="formacao-container">
+				<div>
+					<h2 id="formacao-title">Formação</h2>
+					<ul>
+						<li>Desenvolvedora Full-Stack pelo curso de Desenvolvimento de Software – Cubos Academy;</li>
+						<li>Estudante de engenharia de software na Uninter.</li>
+					</ul>
+				</div>
+				<img src="coding.png" alt="" />
+			</div>
+		</section>
+
+		<section id="portfolio">
+			<div>
+				<h2 id="portfolio-title">Portfólio</h2>
+				<ul>
+					<li>
+						<a href="https://vsm-dv.github.io/the-cat-breeds-page/">
+							<span> Página sobre raças de gatos </span>
+							<img src="portfolio-1.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="https://vsm-dv.github.io/basic-interest-calculator/">
+							<span>Calculadora de juros</span>
+							<img src="portfolio-2.png" alt="" />
+						</a>
+					</li>
+					<li>
+						<a href="https://educ-baleco.netlify.app/">
+							<span>Balanço ecológico EDUC</span>
+							<img src="portfolio-3.png" alt="" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="contato">
+			<div>
+				<h2 id="contato-title">Contato</h2>
+				<form>
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="nome" />
+					<br />
+					<label for="email">E-mail:</label>
+					<input type="text" id="email" name="email" />
+
+					<br />
+					<label for="mensagem">Mensagem:</label>
+
+					<br />
+					<textarea id="message" name="mensagem" rows="10" cols="60">Digite sua mensagem</textarea>
+					<br />
+					<button type="button" onclick="onSubmit()">Enviar</button>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>
