@@ -28,7 +28,17 @@ body {
 header {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	gap: 10px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	border: 2px solid var(--color-text);
+	background-color: var(--color-background);
+	border-radius: var(--radius);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height: 9vh;
 }
 
 .div-button {
@@ -43,6 +53,7 @@ header {
 	height: 50px;
 	border: 2px solid var(--color-text);
 	border-radius: var(--radius);
+	margin-right: 10px;
 }
 
 .div-button:hover,
@@ -59,10 +70,7 @@ button:hover {
 nav {
 	display: flex;
 	gap: 10px;
-	margin-bottom: 18px;
 	padding: 6px;
-	border: 2px solid var(--color-text);
-	border-radius: var(--radius);
 	align-items: center;
 }
 
@@ -89,6 +97,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
+	scroll-margin-top: 11vh;
 }
 section h2 {
 	text-align: center;
@@ -184,8 +193,12 @@ section p {
 	body {
 		padding: 14px;
 	}
+	header {
+		height: 21vh;
+	}
 	section {
 		padding: 20px;
+		scroll-margin-top: 22vh;
 	}
 	nav {
 		flex-wrap: wrap;
