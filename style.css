@@ -204,4 +204,8 @@ section p {
 	.div-button {
 		height: 80px;
 	}
+
+	textarea {
+		max-width: 75vw;
+	}
 }
